@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" /> 
+  <include file="$(find roswww)/launch/roswww.launch" />
+  <include file="$(find jnmouse_ros)/launch/jnmouse.launch" /> 
+  <include file="$(find jetson_nano_csi_cam)/launch/jetson_csi_cam.launch" />
+  <node pkg="web_video_server" name="web_video_server" type="web_video_server" />
+</launch>

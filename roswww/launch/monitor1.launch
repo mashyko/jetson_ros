@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+  <include file="$(find roswww)/launch/roswww.launch" />
+  <include file="$(find jnmouse_ros)/launch/jnmouse.launch" />
+</launch>
+
